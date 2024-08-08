@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+.container{
+    width: 300px;
+    max-height: 400px;
+    background-color: #111;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.upper_div{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 1rem 2rem;
+
+    
+}
+
+.upper_div>h1{
+    font-size:2rem;
+    font-weight: 500;
+    color: rgb(173, 173, 173);
+}
+
+.upper_div>h3{
+    font-size:1.5rem;
+    font-weight: 500;
+    color: rgb(173, 173, 173);
+}
+
+.current_status{
+    font-size: 5rem;
+    
+    background-color: black;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 1rem 1rem;
+}
+
+.divider{
+    border-bottom: 2px solid rgb(46, 46, 46);
+    margin: 1rem 0rem;
+}
+
+.lower_div{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    padding: 2rem 2rem;
+
+}
+
+.lower_div button{
+    padding: 1rem 2rem;
+    cursor: pointer;
+    width:100%;
+
+    font-size: 2rem;
+    border: none;
+}
+
+.lower_div button:nth-child(1){
+    background-color: red;
+}
+.lower_div button:nth-child(2){
+    background-color: rgb(0, 206, 0);
+}
+
+.lower_div button:nth-child(1):disabled {
+    cursor: not-allowed; /* Change cursor to indicate disabled state */
+    background-color: rgb(134, 0, 0); /* Change background color for disabled state */
+    color: #868686; /* Optionally change text color */
+}
+
+.lower_div button:nth-child(2):disabled {
+    cursor: not-allowed; /* Change cursor to indicate disabled state */
+    background-color: rgb(0, 48, 0); /* Change background color for disabled state */
+    color: #868686; /* Optionally change text color */
+}
